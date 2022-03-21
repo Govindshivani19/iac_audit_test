@@ -14,7 +14,7 @@
         "S3MainBucket": {
             "Type": "AWS::S3::Bucket",
             "Properties": {
-                "AccessControl": "Private",
+                "AccessControl": "Public",
                 "BucketName": {
                     "Ref": "MainBucket"
                 },
@@ -40,7 +40,7 @@
                     "RestrictPublicBuckets": true
                 },
                 "VersioningConfiguration": {
-                    "Status": "Enabled"
+                    "Status": "Disabled"
                 }
             }
         }
